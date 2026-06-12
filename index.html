@@ -1,0 +1,494 @@
+<!doctype html><html lang="pt-br"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Instrutor, Experiencia Aplicada, 3 posts</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--navy:#002B5C;--navy2:#001A38;--navy3:#00132B;--lima:#CBD12E;--creme:#F4EDE0;--grafite:#2C3A47;--ferrugem:#C1441E;--offwhite:#FAF7F0;}
+body{background:#0e141a;font-family:'Outfit',sans-serif;padding:36px;color:#e8edf2}
+.topbar{position:sticky;top:0;z-index:80;background:#0e141a;padding:20px 0 16px;border-bottom:2px solid rgba(203,209,46,.3);margin-bottom:24px;display:flex;gap:16px;flex-wrap:wrap;align-items:center}
+.topbar h1{font-size:24px;font-weight:800;color:#CBD12E;margin-right:auto}
+.post-header{display:flex;align-items:center;gap:20px;flex-wrap:wrap;margin:10px 0 22px}
+.post-header h2{font-size:20px;font-weight:700;color:#CBD12E}
+.allbtn{background:#CBD12E;color:#002B5C;border:none;border-radius:999px;padding:12px 22px;font-family:'Outfit',sans-serif;font-weight:700;font-size:14px;cursor:pointer}
+.divider{border:none;border-top:1px dashed rgba(255,255,255,.12);margin:40px 0}
+
+/* POST 1 */
+#inst-post1 .scrim.leftcol{background:linear-gradient(90deg,var(--navy3) 0%,rgba(0,19,43,.9) 38%,rgba(0,19,43,.55) 56%,rgba(0,19,43,0) 76%)}
+#inst-post1 .scrim.right{background:linear-gradient(270deg,var(--navy3) 4%,rgba(0,19,43,.82) 32%,rgba(0,19,43,.25) 56%,rgba(0,19,43,0) 78%)}
+#inst-post1 .scrim.rightsoft{background:linear-gradient(270deg,rgba(0,19,43,.9) 0%,rgba(0,19,43,.55) 30%,rgba(0,19,43,.08) 54%,rgba(0,19,43,0) 72%)}
+#inst-post1 .kicker.rev{flex-direction:row-reverse}
+#inst-post1 .kicker.rev::before{content:none}
+#inst-post1 .kicker.rev::after{content:"";width:42px;height:2px;background:var(--lima);display:inline-block;flex:none}
+#inst-post1 .lima-rule.rev{justify-content:flex-end}
+#inst-post1 .lima-rule.rev .pt{margin-left:0;margin-right:-2px}
+#inst-post1 .deprow.rev{flex-direction:row;justify-content:flex-end}
+#inst-post1 .deprow.rev .num{border-bottom:2px solid rgba(203,209,46,.5)}
+#inst-post1 .intro{max-width:1080px;width:100%;color:#cdd6e0}
+#inst-post1 .intro h1{font-size:22px;font-weight:700;margin-bottom:6px;color:#fff}
+#inst-post1 .intro h1 b{color:var(--lima)}
+#inst-post1 .intro p{font-size:14px;font-weight:300;line-height:1.6;color:#9fb0c2}
+#inst-post1 .intro .pill{display:inline-block;margin-top:10px;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--lima);border:1px solid rgba(203,209,46,.4);border-radius:30px;padding:5px 14px;font-weight:600}
+#inst-post1 .slide-wrap{width:100%;max-width:1080px;display:flex;flex-direction:column;align-items:center;gap:14px}
+#inst-post1 .slide-label{align-self:flex-start;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#7f93a8;font-weight:600}
+#inst-post1 .slide-label b{color:var(--lima)}
+#inst-post1 .slide-scaler{width:100%;overflow:hidden;border-radius:10px}
+#inst-post1 .slide{position:relative;width:1080px;height:1350px;overflow:hidden;background:var(--navy3)}
+#inst-post1 /* TEXTURA dot grid + linhas finas (navy) */
+.tex{position:absolute;inset:0;z-index:1;
+  background-image:
+    radial-gradient(rgba(203,209,46,.10) 1.6px, transparent 1.7px),
+    repeating-linear-gradient(0deg, transparent 0 79px, rgba(255,255,255,.022) 79px 80px),
+    radial-gradient(ellipse at 50% 26%, #063566 0%, var(--navy) 52%, var(--navy3) 100%);
+  background-size:40px 40px, 100% 100%, 100% 100%;}
+#inst-post1 .slide.light .tex{
+  background-image:
+    radial-gradient(rgba(0,43,92,.10) 1.6px, transparent 1.7px),
+    repeating-linear-gradient(0deg, transparent 0 79px, rgba(0,43,92,.03) 79px 80px),
+    radial-gradient(ellipse at 50% 30%, #fff 0%, var(--offwhite) 60%, #efe7d8 100%);
+  background-size:40px 40px, 100% 100%, 100% 100%;}
+#inst-post1 /* cantos marcados */
+.corner{position:absolute;width:62px;height:62px;z-index:26;border-color:var(--lima)}
+#inst-post1 .corner.tl{top:42px;left:42px;border-top:2.5px solid;border-left:2.5px solid}
+#inst-post1 .corner.tr{top:42px;right:42px;border-top:2.5px solid;border-right:2.5px solid}
+#inst-post1 .corner.bl{bottom:42px;left:42px;border-bottom:2.5px solid;border-left:2.5px solid}
+#inst-post1 .corner.br{bottom:42px;right:42px;border-bottom:2.5px solid;border-right:2.5px solid}
+#inst-post1 .eyebrow{position:absolute;top:74px;left:78px;right:78px;display:flex;align-items:center;justify-content:space-between;z-index:30}
+#inst-post1 .seal{display:flex;align-items:center;gap:11px}
+#inst-post1 .seal .dot{width:9px;height:9px;border-radius:50%;background:var(--lima)}
+#inst-post1 .seal span{font-size:18px;letter-spacing:3.5px;text-transform:uppercase;font-weight:700;color:var(--lima)}
+#inst-post1 .count{font-size:19px;font-weight:300;letter-spacing:2px;color:rgba(255,255,255,.6);display:none}
+#inst-post1 .count b{color:#fff;font-weight:600}
+#inst-post1 .slide.light 
+.slide.light .seal span{color:var(--navy)}
+#inst-post1 .slide.light .count{color:rgba(0,43,92,.55)}
+#inst-post1 .slide.light .count b{color:var(--navy)}
+#inst-post1 .photo{position:absolute;z-index:2}
+#inst-post1 .photo img{display:block}
+#inst-post1 .scrim{position:absolute;inset:0;z-index:5;pointer-events:none}
+#inst-post1 .scrim.left{background:linear-gradient(90deg,var(--navy3) 4%,rgba(0,19,43,.82) 32%,rgba(0,19,43,.25) 56%,rgba(0,19,43,0) 78%)}
+#inst-post1 .scrim.leftsoft{background:linear-gradient(90deg,rgba(0,19,43,.9) 0%,rgba(0,19,43,.55) 30%,rgba(0,19,43,.08) 54%,rgba(0,19,43,0) 72%)}
+#inst-post1 .scrim.bottom{background:linear-gradient(0deg,var(--navy3) 0%,rgba(0,19,43,.92) 22%,rgba(0,19,43,.4) 46%,rgba(0,19,43,0) 66%)}
+#inst-post1 .scrim.full{background:linear-gradient(180deg,rgba(0,19,43,.5) 0%,rgba(0,19,43,.3) 28%,rgba(0,19,43,.78) 58%,var(--navy3) 86%)}
+#inst-post1 .slide.light .scrim.creme-bottom{background:linear-gradient(0deg,var(--offwhite) 0%,rgba(250,247,240,.92) 20%,rgba(250,247,240,.3) 44%,rgba(250,247,240,0) 64%)}
+#inst-post1 .content{position:absolute;z-index:20;left:78px;right:78px;bottom:150px}
+#inst-post1 .kicker{font-size:23px;letter-spacing:4px;text-transform:uppercase;color:var(--lima);font-weight:600;margin-bottom:24px;display:flex;align-items:center;gap:16px}
+#inst-post1 .kicker::before{content:"";width:42px;height:2px;background:var(--lima);display:inline-block;flex:none}
+#inst-post1 .slide.light .kicker{color:#8f942a}
+#inst-post1 .title{font-weight:800;line-height:1.0;letter-spacing:-1px;color:#fff;font-size:92px;text-shadow:none}
+#inst-post1 .title.sm{font-size:80px}
+#inst-post1 .title .it{font-style:italic;color:var(--lima)}
+#inst-post1 .hi{position:relative;display:inline-block;color:var(--navy);font-weight:800;z-index:1;padding:2px 14px;margin:3px 0}
+#inst-post1 .hi::after{content:"";position:absolute;left:0;right:0;top:8%;bottom:10%;background:var(--lima);z-index:-1;transform:rotate(-.5deg)}
+#inst-post1 .title .fer{color:var(--ferrugem)}
+#inst-post1 .slide.light .title{color:var(--navy);text-shadow:none}
+#inst-post1 .slide.light .title .it{color:#8f942a}
+#inst-post1 .lima-rule{display:flex;align-items:center;margin:30px 0}
+#inst-post1 .lima-rule .ln{width:90px;height:5px;background:var(--lima);border-radius:3px}
+#inst-post1 .lima-rule .pt{width:13px;height:13px;border-radius:50%;background:var(--lima);margin-left:-2px}
+#inst-post1 .body{font-size:37px;font-weight:300;line-height:1.45;color:rgba(255,255,255,.95);max-width:720px;text-shadow:none}
+#inst-post1 .body .b{font-weight:600;color:#fff}
+#inst-post1 .slide.light .body{color:rgba(0,43,92,.85);text-shadow:none}
+#inst-post1 .deplist{display:flex;flex-direction:column;gap:30px;margin-top:6px}
+#inst-post1 .deprow{display:flex;align-items:center;gap:28px}
+#inst-post1 .deprow .num{font-size:46px;font-weight:200;color:var(--lima);min-width:68px;font-variant-numeric:tabular-nums;border-bottom:2px solid rgba(203,209,46,.5);padding-bottom:3px}
+#inst-post1 .deprow .lbl{font-size:66px;font-weight:700;color:#fff;letter-spacing:-.5px;text-shadow:none}
+#inst-post1 .foot{position:absolute;bottom:62px;left:78px;z-index:25;display:flex;align-items:center;gap:13px}
+#inst-post1 .foot img{height:60px;width:auto;display:block}
+#inst-post1 .foot .a{font-size:20px;font-weight:700;letter-spacing:4px;text-transform:uppercase;color:#fff;line-height:1}
+#inst-post1 .foot .b{font-size:13px;font-weight:500;letter-spacing:6px;text-transform:uppercase;color:var(--lima);margin-top:3px;line-height:1}
+#inst-post1 .slide.light .foot .a{color:var(--navy)}
+#inst-post1 .wmS{position:absolute;z-index:3;font-weight:900;color:rgba(255,255,255,.022);font-size:880px;line-height:1;right:-70px;bottom:-180px;user-select:none}
+#inst-post1 .slide.light .wmS{color:rgba(0,43,92,.025)}
+#inst-post1 .btn{background:var(--lima);color:var(--navy);border:none;font-family:'Outfit',sans-serif;font-weight:700;font-size:14px;letter-spacing:1px;padding:12px 26px;border-radius:8px;cursor:pointer;text-transform:uppercase;align-self:flex-start}
+#inst-post1 .btn:hover{filter:brightness(1.06)}
+#inst-post1 .tip{font-size:12px;color:#7f93a8;font-weight:300;max-width:1080px;width:100%;line-height:1.6}
+/* POST 2 */
+#inst-post2 .scrim.leftcol{background:linear-gradient(90deg,var(--navy3) 0%,var(--navy3) 40%,rgba(0,19,43,.92) 50%,rgba(0,19,43,.5) 60%,rgba(0,19,43,0) 74%)}
+#inst-post2 .scrim.right{background:linear-gradient(270deg,var(--navy3) 4%,rgba(0,19,43,.82) 32%,rgba(0,19,43,.25) 56%,rgba(0,19,43,0) 78%)}
+#inst-post2 .scrim.rightsoft{background:linear-gradient(270deg,rgba(0,19,43,.9) 0%,rgba(0,19,43,.55) 30%,rgba(0,19,43,.08) 54%,rgba(0,19,43,0) 72%)}
+#inst-post2 .kicker.rev{flex-direction:row-reverse}
+#inst-post2 .kicker.rev::before{content:none}
+#inst-post2 .kicker.rev::after{content:"";width:42px;height:2px;background:var(--lima);display:inline-block;flex:none}
+#inst-post2 .lima-rule.rev{justify-content:flex-end}
+#inst-post2 .lima-rule.rev .pt{margin-left:0;margin-right:-2px}
+#inst-post2 .deprow.rev{flex-direction:row;justify-content:flex-end}
+#inst-post2 .deprow.rev .num{border-bottom:2px solid rgba(203,209,46,.5)}
+#inst-post2 .intro{max-width:1080px;width:100%;color:#cdd6e0}
+#inst-post2 .intro h1{font-size:22px;font-weight:700;margin-bottom:6px;color:#fff}
+#inst-post2 .intro h1 b{color:var(--lima)}
+#inst-post2 .intro p{font-size:14px;font-weight:300;line-height:1.6;color:#9fb0c2}
+#inst-post2 .intro .pill{display:inline-block;margin-top:10px;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--lima);border:1px solid rgba(203,209,46,.4);border-radius:30px;padding:5px 14px;font-weight:600}
+#inst-post2 .slide-wrap{width:100%;max-width:1080px;display:flex;flex-direction:column;align-items:center;gap:14px}
+#inst-post2 .slide-label{align-self:flex-start;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#7f93a8;font-weight:600}
+#inst-post2 .slide-label b{color:var(--lima)}
+#inst-post2 .slide-scaler{width:100%;overflow:hidden;border-radius:10px}
+#inst-post2 .slide{position:relative;width:1080px;height:1350px;overflow:hidden;background:var(--navy3)}
+#inst-post2 /* TEXTURA dot grid + linhas finas (navy) */
+.tex{position:absolute;inset:0;z-index:1;
+  background-image:
+    radial-gradient(rgba(203,209,46,.10) 1.6px, transparent 1.7px),
+    repeating-linear-gradient(0deg, transparent 0 79px, rgba(255,255,255,.022) 79px 80px),
+    radial-gradient(ellipse at 50% 26%, #063566 0%, var(--navy) 52%, var(--navy3) 100%);
+  background-size:40px 40px, 100% 100%, 100% 100%;}
+#inst-post2 .slide.light .tex{
+  background-image:
+    radial-gradient(rgba(0,43,92,.10) 1.6px, transparent 1.7px),
+    repeating-linear-gradient(0deg, transparent 0 79px, rgba(0,43,92,.03) 79px 80px),
+    radial-gradient(ellipse at 50% 30%, #fff 0%, var(--offwhite) 60%, #efe7d8 100%);
+  background-size:40px 40px, 100% 100%, 100% 100%;}
+#inst-post2 /* cantos marcados */
+.corner{position:absolute;width:62px;height:62px;z-index:26;border-color:var(--lima)}
+#inst-post2 .corner.tl{top:42px;left:42px;border-top:2.5px solid;border-left:2.5px solid}
+#inst-post2 .corner.tr{top:42px;right:42px;border-top:2.5px solid;border-right:2.5px solid}
+#inst-post2 .corner.bl{bottom:42px;left:42px;border-bottom:2.5px solid;border-left:2.5px solid}
+#inst-post2 .corner.br{bottom:42px;right:42px;border-bottom:2.5px solid;border-right:2.5px solid}
+#inst-post2 .eyebrow{position:absolute;top:74px;left:78px;right:78px;display:flex;align-items:center;justify-content:space-between;z-index:30}
+#inst-post2 .seal{display:flex;align-items:center;gap:11px}
+#inst-post2 .seal .dot{width:9px;height:9px;border-radius:50%;background:var(--lima)}
+#inst-post2 .seal span{font-size:18px;letter-spacing:3.5px;text-transform:uppercase;font-weight:700;color:var(--lima)}
+#inst-post2 .count{font-size:19px;font-weight:300;letter-spacing:2px;color:rgba(255,255,255,.6);display:none}
+#inst-post2 .count b{color:#fff;font-weight:600}
+#inst-post2 .slide.light 
+.slide.light .seal span{color:var(--navy)}
+#inst-post2 .slide.light .count{color:rgba(0,43,92,.55)}
+#inst-post2 .slide.light .count b{color:var(--navy)}
+#inst-post2 .photo{position:absolute;z-index:2}
+#inst-post2 .photo img{display:block}
+#inst-post2 .scrim{position:absolute;inset:0;z-index:5;pointer-events:none}
+#inst-post2 .scrim.left{background:linear-gradient(90deg,var(--navy3) 4%,rgba(0,19,43,.82) 32%,rgba(0,19,43,.25) 56%,rgba(0,19,43,0) 78%)}
+#inst-post2 .scrim.leftsoft{background:linear-gradient(90deg,rgba(0,19,43,.9) 0%,rgba(0,19,43,.55) 30%,rgba(0,19,43,.08) 54%,rgba(0,19,43,0) 72%)}
+#inst-post2 .scrim.bottom{background:linear-gradient(0deg,var(--navy3) 0%,rgba(0,19,43,.92) 22%,rgba(0,19,43,.4) 46%,rgba(0,19,43,0) 66%)}
+#inst-post2 .scrim.full{background:linear-gradient(180deg,rgba(0,19,43,.5) 0%,rgba(0,19,43,.3) 28%,rgba(0,19,43,.78) 58%,var(--navy3) 86%)}
+#inst-post2 .slide.light .scrim.creme-bottom{background:linear-gradient(0deg,var(--offwhite) 0%,rgba(250,247,240,.92) 20%,rgba(250,247,240,.3) 44%,rgba(250,247,240,0) 64%)}
+#inst-post2 .content{position:absolute;z-index:20;left:78px;right:78px;bottom:150px}
+#inst-post2 .kicker{font-size:23px;letter-spacing:4px;text-transform:uppercase;color:var(--lima);font-weight:600;margin-bottom:24px;display:flex;align-items:center;gap:16px}
+#inst-post2 .kicker::before{content:"";width:42px;height:2px;background:var(--lima);display:inline-block;flex:none}
+#inst-post2 .slide.light .kicker{color:#8f942a}
+#inst-post2 .title{font-weight:800;line-height:1.0;letter-spacing:-1px;color:#fff;font-size:92px;text-shadow:none}
+#inst-post2 .title.sm{font-size:80px}
+#inst-post2 .title .it{font-style:italic;color:var(--lima)}
+#inst-post2 .hi{position:relative;display:inline-block;color:var(--navy);font-weight:800;z-index:1;padding:2px 14px;margin:3px 0}
+#inst-post2 .hi::after{content:"";position:absolute;left:0;right:0;top:8%;bottom:10%;background:var(--lima);z-index:-1;transform:rotate(-.5deg)}
+#inst-post2 .title .fer{color:var(--ferrugem)}
+#inst-post2 .slide.light .title{color:var(--navy);text-shadow:none}
+#inst-post2 .slide.light .title .it{color:#8f942a}
+#inst-post2 .lima-rule{display:flex;align-items:center;margin:30px 0}
+#inst-post2 .lima-rule .ln{width:90px;height:5px;background:var(--lima);border-radius:3px}
+#inst-post2 .lima-rule .pt{width:13px;height:13px;border-radius:50%;background:var(--lima);margin-left:-2px}
+#inst-post2 .body{font-size:37px;font-weight:300;line-height:1.45;color:rgba(255,255,255,.95);max-width:720px;text-shadow:none}
+#inst-post2 .body .b{font-weight:600;color:#fff}
+#inst-post2 .slide.light .body{color:rgba(0,43,92,.85);text-shadow:none}
+#inst-post2 .deplist{display:flex;flex-direction:column;gap:30px;margin-top:6px}
+#inst-post2 .deprow{display:flex;align-items:center;gap:28px}
+#inst-post2 .deprow .num{font-size:46px;font-weight:200;color:var(--lima);min-width:68px;font-variant-numeric:tabular-nums;border-bottom:2px solid rgba(203,209,46,.5);padding-bottom:3px}
+#inst-post2 .deprow .lbl{font-size:66px;font-weight:700;color:#fff;letter-spacing:-.5px;text-shadow:none}
+#inst-post2 .foot{position:absolute;bottom:62px;left:78px;z-index:25;display:flex;align-items:center;gap:13px}
+#inst-post2 .foot img{height:60px;width:auto;display:block}
+#inst-post2 .foot .a{font-size:20px;font-weight:700;letter-spacing:4px;text-transform:uppercase;color:#fff;line-height:1}
+#inst-post2 .foot .b{font-size:13px;font-weight:500;letter-spacing:6px;text-transform:uppercase;color:var(--lima);margin-top:3px;line-height:1}
+#inst-post2 .slide.light .foot .a{color:var(--navy)}
+#inst-post2 .wmS{position:absolute;z-index:3;font-weight:900;color:rgba(255,255,255,.022);font-size:880px;line-height:1;right:-70px;bottom:-180px;user-select:none}
+#inst-post2 .slide.light .wmS{color:rgba(0,43,92,.025)}
+#inst-post2 .btn{background:var(--lima);color:var(--navy);border:none;font-family:'Outfit',sans-serif;font-weight:700;font-size:14px;letter-spacing:1px;padding:12px 26px;border-radius:8px;cursor:pointer;text-transform:uppercase;align-self:flex-start}
+#inst-post2 .btn:hover{filter:brightness(1.06)}
+#inst-post2 .tip{font-size:12px;color:#7f93a8;font-weight:300;max-width:1080px;width:100%;line-height:1.6}
+#inst-post2 .scrim.rightcol{background:linear-gradient(270deg,var(--navy3) 0%,rgba(0,19,43,.92) 40%,rgba(0,19,43,.58) 58%,rgba(0,19,43,0) 78%)}
+#inst-post2 .checklist{display:flex;flex-direction:column;gap:20px;margin-top:6px}
+#inst-post2 .checkrow{display:flex;align-items:center;gap:20px;font-size:34px;font-weight:400;color:#fff;text-shadow:none}
+#inst-post2 .checkrow .ck{width:40px;height:40px;border:2.5px solid var(--lima);border-radius:50%;display:flex;align-items:center;justify-content:center;flex:none}
+#inst-post2 .checkrow .ck::after{content:"";width:14px;height:8px;border-left:3px solid var(--lima);border-bottom:3px solid var(--lima);transform:rotate(-45deg) translateY(-2px)}
+#inst-post2 .pillars{display:flex;gap:18px;margin-top:14px}
+#inst-post2 .pillar{flex:1;border:1px solid rgba(203,209,46,.4);border-radius:14px;padding:24px 16px;text-align:center;background:rgba(0,19,43,.3)}
+#inst-post2 .pillar .pl{font-size:22px;letter-spacing:2px;text-transform:uppercase;font-weight:700;color:var(--lima)}
+#inst-post2 .bullets{display:flex;flex-direction:column;gap:22px;margin-top:8px}
+#inst-post2 .bullet{display:flex;gap:20px;align-items:flex-start;font-size:38px;font-weight:300;line-height:1.4;color:rgba(255,255,255,.94);text-shadow:none}
+#inst-post2 .bullet .bd{width:13px;height:13px;border-radius:50%;background:var(--lima);margin-top:17px;flex:none}
+#inst-post2 .sig{font-size:34px;font-weight:700;color:var(--lima);font-style:italic;margin-bottom:8px}
+/* POST 3 */
+#inst-post3 .scrim.leftcol{background:linear-gradient(90deg,var(--navy3) 0%,rgba(0,19,43,.9) 38%,rgba(0,19,43,.55) 56%,rgba(0,19,43,0) 76%)}
+#inst-post3 .scrim.right{background:linear-gradient(270deg,var(--navy3) 4%,rgba(0,19,43,.82) 32%,rgba(0,19,43,.25) 56%,rgba(0,19,43,0) 78%)}
+#inst-post3 .scrim.rightsoft{background:linear-gradient(270deg,rgba(0,19,43,.9) 0%,rgba(0,19,43,.55) 30%,rgba(0,19,43,.08) 54%,rgba(0,19,43,0) 72%)}
+#inst-post3 .kicker.rev{flex-direction:row-reverse}
+#inst-post3 .kicker.rev::before{content:none}
+#inst-post3 .kicker.rev::after{content:"";width:42px;height:2px;background:var(--lima);display:inline-block;flex:none}
+#inst-post3 .lima-rule.rev{justify-content:flex-end}
+#inst-post3 .lima-rule.rev .pt{margin-left:0;margin-right:-2px}
+#inst-post3 .deprow.rev{flex-direction:row;justify-content:flex-end}
+#inst-post3 .deprow.rev .num{border-bottom:2px solid rgba(203,209,46,.5)}
+#inst-post3 .intro{max-width:1080px;width:100%;color:#cdd6e0}
+#inst-post3 .intro h1{font-size:22px;font-weight:700;margin-bottom:6px;color:#fff}
+#inst-post3 .intro h1 b{color:var(--lima)}
+#inst-post3 .intro p{font-size:14px;font-weight:300;line-height:1.6;color:#9fb0c2}
+#inst-post3 .intro .pill{display:inline-block;margin-top:10px;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--lima);border:1px solid rgba(203,209,46,.4);border-radius:30px;padding:5px 14px;font-weight:600}
+#inst-post3 .slide-wrap{width:100%;max-width:1080px;display:flex;flex-direction:column;align-items:center;gap:14px}
+#inst-post3 .slide-label{align-self:flex-start;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#7f93a8;font-weight:600}
+#inst-post3 .slide-label b{color:var(--lima)}
+#inst-post3 .slide-scaler{width:100%;overflow:hidden;border-radius:10px}
+#inst-post3 .slide{position:relative;width:1080px;height:1350px;overflow:hidden;background:var(--navy3)}
+#inst-post3 /* TEXTURA dot grid + linhas finas (navy) */
+.tex{position:absolute;inset:0;z-index:1;
+  background-image:
+    radial-gradient(rgba(203,209,46,.10) 1.6px, transparent 1.7px),
+    repeating-linear-gradient(0deg, transparent 0 79px, rgba(255,255,255,.022) 79px 80px),
+    radial-gradient(ellipse at 50% 26%, #063566 0%, var(--navy) 52%, var(--navy3) 100%);
+  background-size:40px 40px, 100% 100%, 100% 100%;}
+#inst-post3 .slide.light .tex{
+  background-image:
+    radial-gradient(rgba(0,43,92,.10) 1.6px, transparent 1.7px),
+    repeating-linear-gradient(0deg, transparent 0 79px, rgba(0,43,92,.03) 79px 80px),
+    radial-gradient(ellipse at 50% 30%, #fff 0%, var(--offwhite) 60%, #efe7d8 100%);
+  background-size:40px 40px, 100% 100%, 100% 100%;}
+#inst-post3 /* cantos marcados */
+.corner{position:absolute;width:62px;height:62px;z-index:26;border-color:var(--lima)}
+#inst-post3 .corner.tl{top:42px;left:42px;border-top:2.5px solid;border-left:2.5px solid}
+#inst-post3 .corner.tr{top:42px;right:42px;border-top:2.5px solid;border-right:2.5px solid}
+#inst-post3 .corner.bl{bottom:42px;left:42px;border-bottom:2.5px solid;border-left:2.5px solid}
+#inst-post3 .corner.br{bottom:42px;right:42px;border-bottom:2.5px solid;border-right:2.5px solid}
+#inst-post3 .eyebrow{position:absolute;top:74px;left:78px;right:78px;display:flex;align-items:center;justify-content:space-between;z-index:30}
+#inst-post3 .seal{display:flex;align-items:center;gap:11px}
+#inst-post3 .seal .dot{width:9px;height:9px;border-radius:50%;background:var(--lima)}
+#inst-post3 .seal span{font-size:18px;letter-spacing:3.5px;text-transform:uppercase;font-weight:700;color:var(--lima)}
+#inst-post3 .count{font-size:19px;font-weight:300;letter-spacing:2px;color:rgba(255,255,255,.6);display:none}
+#inst-post3 .count b{color:#fff;font-weight:600}
+#inst-post3 .slide.light 
+.slide.light .seal span{color:var(--navy)}
+#inst-post3 .slide.light .count{color:rgba(0,43,92,.55)}
+#inst-post3 .slide.light .count b{color:var(--navy)}
+#inst-post3 .photo{position:absolute;z-index:2}
+#inst-post3 .photo img{display:block}
+#inst-post3 .scrim{position:absolute;inset:0;z-index:5;pointer-events:none}
+#inst-post3 .scrim.left{background:linear-gradient(90deg,var(--navy3) 4%,rgba(0,19,43,.82) 32%,rgba(0,19,43,.25) 56%,rgba(0,19,43,0) 78%)}
+#inst-post3 .scrim.leftsoft{background:linear-gradient(90deg,rgba(0,19,43,.9) 0%,rgba(0,19,43,.55) 30%,rgba(0,19,43,.08) 54%,rgba(0,19,43,0) 72%)}
+#inst-post3 .scrim.bottom{background:linear-gradient(0deg,var(--navy3) 0%,rgba(0,19,43,.92) 22%,rgba(0,19,43,.4) 46%,rgba(0,19,43,0) 66%)}
+#inst-post3 .scrim.full{background:linear-gradient(180deg,rgba(0,19,43,.5) 0%,rgba(0,19,43,.3) 28%,rgba(0,19,43,.78) 58%,var(--navy3) 86%)}
+#inst-post3 .slide.light .scrim.creme-bottom{background:linear-gradient(0deg,var(--offwhite) 0%,rgba(250,247,240,.92) 20%,rgba(250,247,240,.3) 44%,rgba(250,247,240,0) 64%)}
+#inst-post3 .content{position:absolute;z-index:20;left:78px;right:78px;bottom:150px}
+#inst-post3 .kicker{font-size:23px;letter-spacing:4px;text-transform:uppercase;color:var(--lima);font-weight:600;margin-bottom:24px;display:flex;align-items:center;gap:16px}
+#inst-post3 .kicker::before{content:"";width:42px;height:2px;background:var(--lima);display:inline-block;flex:none}
+#inst-post3 .slide.light .kicker{color:#8f942a}
+#inst-post3 .title{font-weight:800;line-height:1.0;letter-spacing:-1px;color:#fff;font-size:92px;text-shadow:none}
+#inst-post3 .title.sm{font-size:80px}
+#inst-post3 .title .it{font-style:italic;color:var(--lima)}
+#inst-post3 .hi{position:relative;display:inline-block;color:var(--navy);font-weight:800;z-index:1;padding:2px 14px;margin:3px 0}
+#inst-post3 .hi::after{content:"";position:absolute;left:0;right:0;top:8%;bottom:10%;background:var(--lima);z-index:-1;transform:rotate(-.5deg)}
+#inst-post3 .title .fer{color:var(--ferrugem)}
+#inst-post3 .slide.light .title{color:var(--navy);text-shadow:none}
+#inst-post3 .slide.light .title .it{color:#8f942a}
+#inst-post3 .lima-rule{display:flex;align-items:center;margin:30px 0}
+#inst-post3 .lima-rule .ln{width:90px;height:5px;background:var(--lima);border-radius:3px}
+#inst-post3 .lima-rule .pt{width:13px;height:13px;border-radius:50%;background:var(--lima);margin-left:-2px}
+#inst-post3 .body{font-size:37px;font-weight:300;line-height:1.45;color:rgba(255,255,255,.95);max-width:720px;text-shadow:none}
+#inst-post3 .body .b{font-weight:600;color:#fff}
+#inst-post3 .slide.light .body{color:rgba(0,43,92,.85);text-shadow:none}
+#inst-post3 .deplist{display:flex;flex-direction:column;gap:30px;margin-top:6px}
+#inst-post3 .deprow{display:flex;align-items:center;gap:28px}
+#inst-post3 .deprow .num{font-size:46px;font-weight:200;color:var(--lima);min-width:68px;font-variant-numeric:tabular-nums;border-bottom:2px solid rgba(203,209,46,.5);padding-bottom:3px}
+#inst-post3 .deprow .lbl{font-size:66px;font-weight:700;color:#fff;letter-spacing:-.5px;text-shadow:none}
+#inst-post3 .foot{position:absolute;bottom:62px;left:78px;z-index:25;display:flex;align-items:center;gap:13px}
+#inst-post3 .foot img{height:60px;width:auto;display:block}
+#inst-post3 .foot .a{font-size:20px;font-weight:700;letter-spacing:4px;text-transform:uppercase;color:#fff;line-height:1}
+#inst-post3 .foot .b{font-size:13px;font-weight:500;letter-spacing:6px;text-transform:uppercase;color:var(--lima);margin-top:3px;line-height:1}
+#inst-post3 .slide.light .foot .a{color:var(--navy)}
+#inst-post3 .wmS{position:absolute;z-index:3;font-weight:900;color:rgba(255,255,255,.022);font-size:880px;line-height:1;right:-70px;bottom:-180px;user-select:none}
+#inst-post3 .slide.light .wmS{color:rgba(0,43,92,.025)}
+#inst-post3 .btn{background:var(--lima);color:var(--navy);border:none;font-family:'Outfit',sans-serif;font-weight:700;font-size:14px;letter-spacing:1px;padding:12px 26px;border-radius:8px;cursor:pointer;text-transform:uppercase;align-self:flex-start}
+#inst-post3 .btn:hover{filter:brightness(1.06)}
+#inst-post3 .tip{font-size:12px;color:#7f93a8;font-weight:300;max-width:1080px;width:100%;line-height:1.6}
+#inst-post3 .bullets{display:flex;flex-direction:column;gap:26px;margin-top:8px}
+#inst-post3 .bullet{display:flex;gap:20px;align-items:flex-start;font-size:38px;font-weight:300;line-height:1.38;color:rgba(255,255,255,.94);text-shadow:none}
+#inst-post3 .bullet .bd{width:13px;height:13px;border-radius:50%;background:var(--lima);margin-top:17px;flex:none}
+</style></head><body>
+<div class="topbar"><h1>Instrutor, Experiencia Aplicada</h1><button class="allbtn" id="dlall" onclick="dlAll()">Baixar TODOS os 18 slides</button></div>
+
+<div class="post-section" id="inst-post1">
+  <div class="post-header"><h2>Post 1, O que artes marciais tem a ver com seguranca</h2><button class="allbtn" onclick="dlPost(1)">Baixar os 6 slides deste post</button></div>
+  
+<div class="intro"><h1>Experiência Aplicada <b>·</b> Post 1</h1><p>O que artes marciais tem a ver com segurança. Editorial premium com cantos marcados, textura dot grid e firulas. Navy base, respiro creme, lima/ferrugem em destaque. Export 1080x1350.</p><span class="pill">Editoria Experiência Aplicada</span><br></div><div class="slide-wrap"><div class="slide-label">Slide 1 <b>·</b> Capa</div><div class="slide-scaler"><div class="slide" id="e1s1">
+  <div class="tex"></div>
+  <div class="photo" style="right:-20px;top:90px;bottom:0;display:flex;align-items:flex-end"><img src="images/img_001_70bb1ce03b.png" style="height:88%;width:auto"></div>
+  <div class="scrim leftcol"></div><div class="wmS">S</div><div class="corner tl"></div><div class="corner tr"></div><div class="corner bl"></div><div class="corner br"></div><div class="eyebrow"><div class="seal"><span class="dot"></span><span>Experiência Aplicada</span></div><div class="count"><b>01</b> / 06</div></div>
+  <div class="content" style="text-align:left;left:78px;right:78px">
+    <div class="kicker">A pergunta</div>
+    <div class="title">O que<br><span class="hi">artes</span><br><span class="hi">marciais</span><br>tem a ver com<br><span class="it">segurança?</span></div>
+    <div class="lima-rule"><span class="ln"></span><span class="pt"></span></div>
+    <div class="body">Mais do que força. Uma compreensão aplicada do corpo, do limite e da proteção.</div>
+  </div><div class="foot"><img src="images/img_002_2765cfef19.png"><div><div class="a">Método</div><div class="b">Sentinela</div></div></div></div></div><button class="btn" onclick="dl('e1s1','sentinela-exp-p1-s1')">Baixar PNG slide 1</button></div><div class="slide-wrap"><div class="slide-label">Slide 2 <b>·</b> Construção</div><div class="slide-scaler"><div class="slide" id="e1s2">
+  <div class="tex"></div>
+  <div class="photo" style="left:50%;transform:translateX(-50%);top:48px;height:830px"><img src="images/img_003_7596b209f6.png" style="height:100%;width:auto"></div>
+  <div class="scrim bottom"></div><div class="wmS">S</div><div class="corner tl"></div><div class="corner tr"></div><div class="corner bl"></div><div class="corner br"></div><div class="eyebrow"><div class="seal"><span class="dot"></span><span>Experiência Aplicada</span></div><div class="count"><b>02</b> / 06</div></div>
+  <div class="content">
+    <div class="title">Muita gente<br>imagina que<br>contenção<br>depende de <span class="it">força.</span></div>
+  </div><div class="foot"><img src="images/img_002_2765cfef19.png"><div><div class="a">Método</div><div class="b">Sentinela</div></div></div></div></div><button class="btn" onclick="dl('e1s2','sentinela-exp-p1-s2')">Baixar PNG slide 2</button></div><div class="slide-wrap"><div class="slide-label">Slide 3 <b>·</b> Vira a chave (tipografico)</div><div class="slide-scaler"><div class="slide" id="e1s3">
+  <div class="tex"></div>
+  <div class="wmS" style="font-size:1150px;right:-180px;bottom:-340px;color:rgba(255,255,255,.06)">S</div>
+  <div class="corner tl"></div><div class="corner tr"></div><div class="corner bl"></div><div class="corner br"></div><div class="eyebrow"><div class="seal"><span class="dot"></span><span>Experiência Aplicada</span></div><div class="count"><b>03</b> / 06</div></div>
+  <div class="content" style="top:50%;bottom:auto;transform:translateY(-50%)">
+    <div class="kicker">Na prática</div>
+    <div class="title" style="font-size:124px">depende<br>de <span class="hi">técnica.</span></div>
+    <div class="lima-rule"><span class="ln"></span><span class="pt"></span></div>
+    <div class="body">Não é sobre a intensidade da força, é sobre a precisão do gesto.</div>
+  </div><div class="foot"><img src="images/img_002_2765cfef19.png"><div><div class="a">Método</div><div class="b">Sentinela</div></div></div></div></div><button class="btn" onclick="dl('e1s3','sentinela-exp-p1-s3')">Baixar PNG slide 3</button></div><div class="slide-wrap"><div class="slide-label">Slide 4 <b>·</b> Principio</div><div class="slide-scaler"><div class="slide" id="e1s4">
+  <div class="tex"></div>
+  <div class="photo" style="right:-30px;top:60px;bottom:0;display:flex;align-items:flex-end"><img src="images/img_004_77b72a8b2c.png" style="height:94%;width:auto"></div>
+  <div class="scrim leftcol"></div><div class="wmS">S</div><div class="corner tl"></div><div class="corner tr"></div><div class="corner bl"></div><div class="corner br"></div><div class="eyebrow"><div class="seal"><span class="dot"></span><span>Experiência Aplicada</span></div><div class="count"><b>04</b> / 06</div></div>
+  <div class="content" style="top:50%;bottom:auto;transform:translateY(-50%);text-align:left">
+    <div class="kicker">Depende de</div>
+    <div class="deplist" style="align-items:flex-start">
+      <div class="deprow"><div class="num">01</div><div class="lbl">controle.</div></div>
+      <div class="deprow"><div class="num">02</div><div class="lbl">equilíbrio.</div></div>
+      <div class="deprow"><div class="num">03</div><div class="lbl">proporcionalidade.</div></div>
+    </div>
+    <div class="body" style="margin-top:40px;font-size:40px">É sobre usar o necessário, com o <span class="b">mínimo de força</span> e o máximo de segurança.</div>
+  </div><div class="foot"><img src="images/img_002_2765cfef19.png"><div><div class="a">Método</div><div class="b">Sentinela</div></div></div></div></div><button class="btn" onclick="dl('e1s4','sentinela-exp-p1-s4')">Baixar PNG slide 4</button></div><div class="slide-wrap"><div class="slide-label">Slide 5 <b>·</b> Sintese (creme)</div><div class="slide-scaler"><div class="slide light" id="e1s5">
+  <div class="tex"></div>
+  <div class="photo" style="left:0;right:0;top:0;height:850px;overflow:hidden"><img src="images/img_005_fb1759b4ea.png" style="width:100%;height:100%;object-fit:cover;object-position:center 28%"></div>
+  <div class="scrim creme-bottom"></div><div class="wmS">S</div><div class="corner tl"></div><div class="corner tr"></div><div class="corner bl"></div><div class="corner br"></div><div class="eyebrow"><div class="seal"><span class="dot"></span><span>Experiência Aplicada</span></div><div class="count"><b>05</b> / 06</div></div>
+  <div class="content">
+    <div class="title">Quanto maior<br>a <span class="it">técnica,</span><br>menor a necessidade<br>de <span class="fer">força.</span></div>
+  </div><div class="foot"><img src="images/img_002_2765cfef19.png"><div><div class="a">Método</div><div class="b">Sentinela</div></div></div></div></div><button class="btn" onclick="dl('e1s5','sentinela-exp-p1-s5')">Baixar PNG slide 5</button></div><div class="slide-wrap"><div class="slide-label">Slide 6 <b>·</b> Punch line</div><div class="slide-scaler"><div class="slide" id="e1s6">
+  <div class="tex"></div>
+  <div class="photo" style="left:0;right:0;top:0;height:880px;overflow:hidden"><img src="images/img_006_521e622737.png" style="width:100%;height:100%;object-fit:cover;object-position:center 18%"></div>
+  <div class="scrim full"></div><div class="wmS">S</div><div class="corner tl"></div><div class="corner tr"></div><div class="corner bl"></div><div class="corner br"></div><div class="eyebrow"><div class="seal"><span class="dot"></span><span>Experiência Aplicada</span></div><div class="count"><b>06</b> / 06</div></div>
+  <div class="content" style="bottom:210px">
+    <div class="title" style="font-size:88px">Segurança<br><span class="it">não é</span> sobre<br>dominar pessoas.</div>
+    <div class="lima-rule"><span class="ln"></span><span class="pt"></span></div>
+    <div class="title" style="font-size:72px">E sobre <span class="hi">proteger</span><br>pessoas.</div>
+  </div><div class="foot" style="left:auto;right:78px"><img src="images/img_002_2765cfef19.png"><div><div class="a">Método</div><div class="b">Sentinela</div></div></div></div></div><button class="btn" onclick="dl('e1s6','sentinela-exp-p1-s6')">Baixar PNG slide 6</button></div><div class="tip">Acabamento aplicado: cantos marcados lima, textura dot grid + linhas finas, kicker com filete, divisor com ponto. Slide 3 tipografico. Export com fix html2canvas, 2x.</div>
+</div><hr class="divider">
+<div class="post-section" id="inst-post2">
+  <div class="post-header"><h2>Post 2, O instrutor (Luiz Augusto)</h2><button class="allbtn" onclick="dlPost(2)">Baixar os 6 slides deste post</button></div>
+  
+<div class="intro"><h1>Experiência Aplicada <b>·</b> Post 2</h1><p>A prática muda a forma de ensinar. Mesmo tratamento editorial do Post 1: cantos marcados, dot grid, firulas, ritmo navy. Export 1080x1350.</p><span class="pill">Editoria Experiência Aplicada</span><br></div><div class="slide-wrap"><div class="slide-label">Slide 1 <b>·</b> Capa</div><div class="slide-scaler"><div class="slide" id="e2s1">
+  <div class="tex"></div>
+  <div class="photo" style="left:-80px;top:130px;bottom:0;display:flex;align-items:flex-end"><img src="images/img_007_3c5c2943e5.png" style="height:70%%;width:auto"></div>
+  <div class="scrim rightcol"></div><div class="wmS" style="left:-70px;right:auto">S</div><div class="corner tl"></div><div class="corner tr"></div><div class="corner bl"></div><div class="corner br"></div><div class="eyebrow"><div class="seal"><span class="dot"></span><span>Experiência Aplicada</span></div><div class="count"><b>01</b> / 06</div></div>
+  <div class="content" style="text-align:right">
+    <div class="kicker rev">A formação</div>
+    <div class="title">Formação que<br>transforma<br><span class="hi">conhecimento</span><br>em <span class="it">competência.</span></div>
+    <div class="lima-rule rev"><span class="pt"></span><span class="ln"></span></div>
+    <div class="body" style="margin-left:auto">Mais do que aprender o protocolo, e desenvolver segurança para aplica-lo quando importa.</div>
+  </div><div class="foot" style="left:auto;right:78px"><img src="images/img_002_2765cfef19.png"><div><div class="a">Método</div><div class="b">Sentinela</div></div></div></div></div><button class="btn" onclick="dl('e2s1','sentinela-exp-p2-s1')">Baixar PNG slide 1</button></div><div class="slide-wrap"><div class="slide-label">Slide 2 <b>·</b> O instrutor (bullets)</div><div class="slide-scaler"><div class="slide" id="e2s2">
+  <div class="tex"></div>
+  <div class="wmS" style="font-size:1050px;right:-160px;bottom:-300px;color:rgba(255,255,255,.055)">S</div>
+  <div class="corner tl"></div><div class="corner tr"></div><div class="corner bl"></div><div class="corner br"></div><div class="eyebrow"><div class="seal"><span class="dot"></span><span>Experiência Aplicada</span></div><div class="count"><b>02</b> / 06</div></div>
+  <div class="content" style="top:200px;bottom:auto">
+    <div class="kicker">O instrutor</div>
+    <div class="title" style="font-size:80px">Um instrutor.<br><span class="it">Múltiplas</span><br>experiências.</div>
+    <div class="bullets" style="margin-top:50px;gap:28px">
+      <div class="bullet"><span class="bd"></span><span>Análise do Comportamento aplicada ao cuidado.</span></div>
+      <div class="bullet"><span class="bd"></span><span>Gestão e liderança em serviços voltados ao atendimento neurodivergente.</span></div>
+      <div class="bullet"><span class="bd"></span><span>Artes marciais como base para técnica, controle e proporcionalidade.</span></div>
+      <div class="bullet"><span class="bd"></span><span>Formação e certificação internacional em PCM.</span></div>
+    </div>
+  </div><div class="foot"><img src="images/img_002_2765cfef19.png"><div><div class="a">Método</div><div class="b">Sentinela</div></div></div></div></div><button class="btn" onclick="dl('e2s2','sentinela-exp-p2-s2')">Baixar PNG slide 2</button></div><div class="slide-wrap"><div class="slide-label">Slide 3 <b>·</b> Pull quote</div><div class="slide-scaler"><div class="slide" id="e2s3">
+  <div class="tex"></div>
+  <div class="wmS" style="font-size:1150px;right:-180px;bottom:-340px;color:rgba(255,255,255,.06)">S</div>
+  <div class="corner tl"></div><div class="corner tr"></div><div class="corner bl"></div><div class="corner br"></div><div class="eyebrow"><div class="seal"><span class="dot"></span><span>Experiência Aplicada</span></div><div class="count"><b>03</b> / 06</div></div>
+  <div class="content" style="top:50%;bottom:auto;transform:translateY(-50%)">
+    <div class="kicker">A realidade</div>
+    <div class="title" style="font-size:80px">Situações críticas<br><span class="it">não seguem</span><br>roteiro.</div>
+    <div class="lima-rule"><span class="ln"></span><span class="pt"></span></div>
+    <div class="title" style="font-size:58px;margin-top:8px">Mas profissionais<br>preparados <span class="hi">fazem</span><br>a diferença.</div>
+  </div><div class="foot"><img src="images/img_002_2765cfef19.png"><div><div class="a">Método</div><div class="b">Sentinela</div></div></div></div></div><button class="btn" onclick="dl('e2s3','sentinela-exp-p2-s3')">Baixar PNG slide 3</button></div><div class="slide-wrap"><div class="slide-label">Slide 4 <b>·</b> Formação prática</div><div class="slide-scaler"><div class="slide" id="e2s4">
+  <div class="tex"></div>
+  <div class="photo" style="left:0;right:0;top:0;height:720px;overflow:hidden"><img src="images/img_008_3902bd9b68.png" style="width:100%;height:100%;object-fit:cover;object-position:center 35%"></div>
+  <div class="scrim bottom"></div><div class="wmS">S</div><div class="corner tl"></div><div class="corner tr"></div><div class="corner bl"></div><div class="corner br"></div><div class="eyebrow"><div class="seal"><span class="dot"></span><span>Experiência Aplicada</span></div><div class="count"><b>04</b> / 06</div></div>
+  <div class="content" style="bottom:175px">
+    <div class="kicker">A formação</div>
+    <div class="title" style="font-size:58px">Intensa, prática e<br>baseada em <span class="it">experiências reais.</span></div>
+    <div class="checklist" style="margin-top:30px">
+      <div class="checkrow"><span class="ck"></span>Estudo de casos reais</div>
+      <div class="checkrow"><span class="ck"></span>Simulações e demonstrações técnicas</div>
+      <div class="checkrow"><span class="ck"></span>Discussões orientadas e aplicação supervisionada</div>
+    </div>
+  </div><div class="foot"><img src="images/img_002_2765cfef19.png"><div><div class="a">Método</div><div class="b">Sentinela</div></div></div></div></div><button class="btn" onclick="dl('e2s4','sentinela-exp-p2-s4')">Baixar PNG slide 4</button></div><div class="slide-wrap"><div class="slide-label">Slide 5 <b>·</b> Julgamento presença critério</div><div class="slide-scaler"><div class="slide" id="e2s5">
+  <div class="tex"></div>
+  <div class="photo" style="left:0;right:0;top:0;height:680px;overflow:hidden"><img src="images/img_009_823abc046d.png" style="width:100%;height:100%;object-fit:cover;object-position:center 30%"></div>
+  <div class="scrim bottom"></div><div class="wmS">S</div><div class="corner tl"></div><div class="corner tr"></div><div class="corner bl"></div><div class="corner br"></div><div class="eyebrow"><div class="seal"><span class="dot"></span><span>Experiência Aplicada</span></div><div class="count"><b>05</b> / 06</div></div>
+  <div class="content" style="bottom:118px">
+    <div class="title" style="font-size:54px">Mais do que ensinar técnicas, o objetivo e desenvolver <span class="it">julgamento, presença e critério.</span></div>
+    <div class="pillars">
+      <div class="pillar"><div class="pl">Leitura</div></div>
+      <div class="pillar"><div class="pl">Decisão</div></div>
+      <div class="pillar"><div class="pl">Cuidado</div></div>
+    </div>
+  </div><div class="foot"><img src="images/img_002_2765cfef19.png"><div><div class="a">Método</div><div class="b">Sentinela</div></div></div></div></div><button class="btn" onclick="dl('e2s5','sentinela-exp-p2-s5')">Baixar PNG slide 5</button></div><div class="slide-wrap"><div class="slide-label">Slide 6 <b>·</b> Assinatura Luiz</div><div class="slide-scaler"><div class="slide" id="e2s6">
+  <div class="tex"></div>
+  <div class="photo" style="left:-200px;top:70px;bottom:0;display:flex;align-items:flex-end"><img src="images/img_004_77b72a8b2c.png" style="height:92%;width:auto"></div>
+  <div class="scrim rightcol"></div><div class="wmS" style="left:-70px;right:auto">S</div><div class="corner tl"></div><div class="corner tr"></div><div class="corner bl"></div><div class="corner br"></div><div class="eyebrow"><div class="seal"><span class="dot"></span><span>Experiência Aplicada</span></div><div class="count"><b>06</b> / 06</div></div>
+  <div class="content" style="text-align:right">
+    <div class="kicker rev">O instrutor</div>
+    <div class="title" style="font-size:64px">Aprender com<br><span class="hi">experiência</span><br>faz toda a<br>diferença na <span class="it">prática.</span></div>
+    <div class="lima-rule rev"><span class="pt"></span><span class="ln"></span></div>
+    <div class="sig" style="margin-left:auto">Luiz Augusto</div>
+    <div class="body" style="font-size:27px;margin-left:auto;max-width:560px">Instrutor do Método Sentinela e formador de profissionais para situações críticas em contextos de cuidado.</div>
+  </div><div class="foot"><img src="images/img_002_2765cfef19.png"><div><div class="a">Método</div><div class="b">Sentinela</div></div></div></div></div><button class="btn" onclick="dl('e2s6','sentinela-exp-p2-s6')">Baixar PNG slide 6</button></div><div class="tip">Post 2 da editoria. Fotos do Luiz embutidas (6,7,8,9 recortadas). Slides 2 e 3 tipograficos. Mesmo padrao do Post 1.</div>
+</div><hr class="divider">
+<div class="post-section" id="inst-post3">
+  <div class="post-header"><h2>Post 3, Dois caminhos</h2><button class="allbtn" onclick="dlPost(3)">Baixar os 6 slides deste post</button></div>
+  
+<div class="intro"><h1>Experiência Aplicada <b>·</b> Post 3</h1><p>Método se aprende, critério se constrói. Versao minimalista, mais respiro. Mesmo tratamento editorial. Export 1080x1350.</p><span class="pill">Editoria Experiência Aplicada</span><br></div><div class="slide-wrap"><div class="slide-label">Slide 1 <b>·</b> Capa</div><div class="slide-scaler"><div class="slide" id="e3s1"><div class="tex"></div>
+<div class="photo" style="right:-20px;top:90px;bottom:0;display:flex;align-items:flex-end"><img src="images/img_010_79fe506e49.png" style="height:86%;width:auto"></div>
+<div class="scrim leftcol"></div><div class="wmS">S</div><div class="corner tl"></div><div class="corner tr"></div><div class="corner bl"></div><div class="corner br"></div><div class="eyebrow"><div class="seal"><span class="dot"></span><span>Experiência Aplicada</span></div><div class="count"><b>01</b> / 06</div></div>
+<div class="content" style="text-align:left">
+<div class="kicker">A formação</div>
+<div class="title">Formação que<br>transforma<br><span class="hi">conhecimento</span><br>em <span class="it">competência.</span></div>
+<div class="lima-rule"><span class="ln"></span><span class="pt"></span></div>
+<div class="body">Mais do que aprender o protocolo, e desenvolver segurança para aplica-lo quando importa.</div>
+</div><div class="foot"><img src="images/img_002_2765cfef19.png"><div><div class="a">Método</div><div class="b">Sentinela</div></div></div></div></div><button class="btn" onclick="dl('e3s1','sentinela-exp-p3-s1')">Baixar PNG slide 1</button></div><div class="slide-wrap"><div class="slide-label">Slide 2 <b>·</b> Dois caminhos</div><div class="slide-scaler"><div class="slide" id="e3s2"><div class="tex"></div>
+<div class="wmS" style="font-size:1100px;right:-170px;bottom:-320px;color:rgba(255,255,255,.055)">S</div><div class="corner tl"></div><div class="corner tr"></div><div class="corner bl"></div><div class="corner br"></div><div class="eyebrow"><div class="seal"><span class="dot"></span><span>Experiência Aplicada</span></div><div class="count"><b>02</b> / 06</div></div>
+<div class="content" style="top:50%;bottom:auto;transform:translateY(-50%)">
+<div class="kicker">Dois caminhos</div>
+<div class="title" style="font-size:62px">Existem conhecimentos<br>que se aprendem<br>nos <span class="it">livros.</span></div>
+<div class="lima-rule"><span class="ln"></span><span class="pt"></span></div>
+<div class="title" style="font-size:62px">E competências que<br>só a <span class="hi">experiência</span><br>constrói.</div>
+</div><div class="foot"><img src="images/img_002_2765cfef19.png"><div><div class="a">Método</div><div class="b">Sentinela</div></div></div></div></div><button class="btn" onclick="dl('e3s2','sentinela-exp-p3-s2')">Baixar PNG slide 2</button></div><div class="slide-wrap"><div class="slide-label">Slide 3 <b>·</b> Exige mais</div><div class="slide-scaler"><div class="slide" id="e3s3"><div class="tex"></div>
+<div class="wmS" style="font-size:1050px;right:-160px;bottom:-300px;color:rgba(255,255,255,.055)">S</div><div class="corner tl"></div><div class="corner tr"></div><div class="corner bl"></div><div class="corner br"></div><div class="eyebrow"><div class="seal"><span class="dot"></span><span>Experiência Aplicada</span></div><div class="count"><b>03</b> / 06</div></div>
+<div class="content" style="top:50%;bottom:auto;transform:translateY(-50%)">
+<div class="kicker">Na realidade</div>
+<div class="title" style="font-size:68px">Algumas situações<br>exigem mais do que<br>conhecimento <span class="it">técnico.</span></div>
+<div class="bullets" style="margin-top:54px;gap:32px">
+<div class="bullet" style="font-size:46px"><span class="bd" style="margin-top:21px"></span><span>Tomar decisões sob pressão.</span></div>
+<div class="bullet" style="font-size:46px"><span class="bd" style="margin-top:21px"></span><span>Lidar com comportamentos desafiadores.</span></div>
+<div class="bullet" style="font-size:46px"><span class="bd" style="margin-top:21px"></span><span>Avaliar riscos.</span></div>
+<div class="bullet" style="font-size:46px"><span class="bd" style="margin-top:21px"></span><span>Conduzir pessoas.</span></div>
+</div>
+</div><div class="foot"><img src="images/img_002_2765cfef19.png"><div><div class="a">Método</div><div class="b">Sentinela</div></div></div></div></div><button class="btn" onclick="dl('e3s3','sentinela-exp-p3-s3')">Baixar PNG slide 3</button></div><div class="slide-wrap"><div class="slide-label">Slide 4 <b>·</b> Construção</div><div class="slide-scaler"><div class="slide" id="e3s4"><div class="tex"></div>
+<div class="photo" style="left:-20px;top:90px;bottom:0;display:flex;align-items:flex-end"><img src="images/img_001_70bb1ce03b.png" style="height:86%;width:auto"></div>
+<div class="scrim rightcol"></div><div class="wmS" style="left:-70px;right:auto">S</div><div class="corner tl"></div><div class="corner tr"></div><div class="corner bl"></div><div class="corner br"></div><div class="eyebrow"><div class="seal"><span class="dot"></span><span>Experiência Aplicada</span></div><div class="count"><b>04</b> / 06</div></div>
+<div class="content" style="text-align:right">
+<div class="kicker rev">A construção</div>
+<div class="title">Essas habilidades<br>são construídas<br>na <span class="hi">prática.</span></div>
+<div class="lima-rule rev"><span class="pt"></span><span class="ln"></span></div>
+<div class="body" style="margin-left:auto">Não se aprende critério lendo sobre ele. Se desenvolve vivendo a decisão.</div>
+</div><div class="foot" style="left:auto;right:78px"><img src="images/img_002_2765cfef19.png"><div><div class="a">Método</div><div class="b">Sentinela</div></div></div></div></div><button class="btn" onclick="dl('e3s4','sentinela-exp-p3-s4')">Baixar PNG slide 4</button></div><div class="slide-wrap"><div class="slide-label">Slide 5 <b>·</b> O método</div><div class="slide-scaler"><div class="slide light" id="e3s5"><div class="tex"></div>
+<div class="wmS" style="font-size:1100px;right:-170px;bottom:-320px">S</div><div class="corner tl"></div><div class="corner tr"></div><div class="corner bl"></div><div class="corner br"></div><div class="eyebrow"><div class="seal"><span class="dot"></span><span>Experiência Aplicada</span></div><div class="count"><b>05</b> / 06</div></div>
+<div class="content" style="top:50%;bottom:auto;transform:translateY(-50%)">
+<div class="kicker">O método</div>
+<div class="title" style="font-size:64px">Por isso a formação<br>combina conhecimento<br><span class="it">técnico</span> com<br>experiência <span class="fer">aplicada.</span></div>
+</div><div class="foot"><img src="images/img_002_2765cfef19.png"><div><div class="a">Método</div><div class="b">Sentinela</div></div></div></div></div><button class="btn" onclick="dl('e3s5','sentinela-exp-p3-s5')">Baixar PNG slide 5</button></div><div class="slide-wrap"><div class="slide-label">Slide 6 <b>·</b> Punch</div><div class="slide-scaler"><div class="slide" id="e3s6"><div class="tex"></div>
+<div class="photo" style="right:-20px;top:120px;bottom:0;display:flex;align-items:flex-end"><img src="images/img_001_70bb1ce03b.png" style="height:84%;width:auto"></div>
+<div class="scrim leftcol"></div><div class="wmS">S</div><div class="corner tl"></div><div class="corner tr"></div><div class="corner bl"></div><div class="corner br"></div><div class="eyebrow"><div class="seal"><span class="dot"></span><span>Experiência Aplicada</span></div><div class="count"><b>06</b> / 06</div></div>
+<div class="content" style="text-align:left;bottom:200px">
+<div class="title" style="font-size:84px">Método<br>se <span class="it">aprende.</span></div>
+<div class="lima-rule"><span class="ln"></span><span class="pt"></span></div>
+<div class="title" style="font-size:84px">Critério<br>se <span class="hi">constrói.</span></div>
+</div><div class="foot"><img src="images/img_002_2765cfef19.png"><div><div class="a">Método</div><div class="b">Sentinela</div></div></div></div></div><button class="btn" onclick="dl('e3s6','sentinela-exp-p3-s6')">Baixar PNG slide 6</button></div><div class="tip">Post 3 minimalista. Fotos novas (cut 1,2,7). Slides 2,3,5 tipograficos.</div>
+</div><hr class="divider">
+<script>
+window.__p1=[["e1s1","sentinela-exp-p1-s1"],["e1s2","sentinela-exp-p1-s2"],["e1s3","sentinela-exp-p1-s3"],["e1s4","sentinela-exp-p1-s4"],["e1s5","sentinela-exp-p1-s5"],["e1s6","sentinela-exp-p1-s6"]];
+window.__p2=[["e2s1","sentinela-exp-p2-s1"],["e2s2","sentinela-exp-p2-s2"],["e2s3","sentinela-exp-p2-s3"],["e2s4","sentinela-exp-p2-s4"],["e2s5","sentinela-exp-p2-s5"],["e2s6","sentinela-exp-p2-s6"]];
+window.__p3=[["e3s1","sentinela-exp-p3-s1"],["e3s2","sentinela-exp-p3-s2"],["e3s3","sentinela-exp-p3-s3"],["e3s4","sentinela-exp-p3-s4"],["e3s5","sentinela-exp-p3-s5"],["e3s6","sentinela-exp-p3-s6"]];
+window.__all=[...window.__p1,...window.__p2,...window.__p3];
+</script>
+<script>
+async function dlOne(el,name){const sel=el.querySelector('.selected');if(sel)sel.classList.remove('selected');const pt=el.style.transform,po=el.style.transformOrigin;el.style.transform='none';el.style.transformOrigin='top left';await document.fonts.ready;await new Promise(r=>setTimeout(r,120));const cv=await html2canvas(el,{width:1080,height:1350,windowWidth:1080,windowHeight:1350,scale:2,useCORS:true,backgroundColor:null,logging:false});el.style.transform=pt;el.style.transformOrigin=po;return new Promise(res=>{cv.toBlob(b=>{const u=URL.createObjectURL(b);const a=document.createElement('a');a.href=u;a.download=name+'.png';a.click();setTimeout(()=>{URL.revokeObjectURL(u);res();},200);},'image/png');});}
+async function dl(id,name){try{await dlOne(document.getElementById(id),name);}catch(e){alert('Erro: '+e.message);}}
+async function runList(items,btn){const old=btn.textContent;btn.disabled=true;for(let i=0;i<items.length;i++){btn.textContent='Baixando '+(i+1)+'/'+items.length+'...';try{await dlOne(document.getElementById(items[i][0]),items[i][1]);}catch(e){}await new Promise(r=>setTimeout(r,400));}btn.textContent=old;btn.disabled=false;}
+async function dlPost(n){await runList(window['__p'+n],event.target);}
+async function dlAll(){await runList(window.__all,document.getElementById('dlall'));}
+</script>
+</body></html>
